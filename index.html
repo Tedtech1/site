@@ -1,12 +1,18 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Emo</title>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
+      padding: 0 10px;
       background-color: #000;
       color: #fff;
       font-family: 'Great Vibes', cursive;
@@ -14,23 +20,33 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 100vh;
+      min-height: 100vh;
       text-align: center;
     }
+
     h1 {
-      font-size: 4em;
+      font-size: 10vw; /* Tamanho proporcional à largura da tela */
       color: #800725;
       text-shadow: 0 0 10px #7c0624;
+      margin-bottom: 10px;
     }
+
     p {
-      font-size: 1.5em;
+      font-size: 1.3em;
       color: #fff;
-      max-width: 600px;
+      max-width: 90%;
+      margin: 15px 0;
     }
+
     .heart {
-      font-size: 3em;
-      color: #46121f;
+      font-size: 2.5em;
+      margin: 10px 0;
       animation: pulse 1.5s infinite;
+    }
+
+    .heart a {
+      text-decoration: none;
+      color: #46121f;
     }
 
     @keyframes pulse {
@@ -40,6 +56,8 @@
     }
 
     .container {
+      width: 100%;
+      max-width: 500px;
       padding: 20px;
       border: 2px solid #46121f;
       border-radius: 15px;
@@ -50,9 +68,12 @@
 <body>
   <div class="container">
     <h1>Para meu Passeante</h1>
-    <div class="heart"> <a href="https://open.spotify.com/playlist/7dvB4zVY408PfyWwSYZICt?si=f5bfdfd7413e471e" target="_blank">❤️</a> Clique aqui</div>
+    <div class="heart">
+      <a href="https://open.spotify.com/playlist/7dvB4zVY408PfyWwSYZICt?si=f5bfdfd7413e471e" target="_blank">❤️</a><br>
+      <small>Clique aqui</small>
+    </div>
     <p>
-        Você não é o Death Note, mas causa ataque cardíaco.
+      Você não é o Death Note, mas causa ataque cardíaco.
     </p>
   </div>
 </body>
